@@ -15,10 +15,15 @@ public class Activity2_Villamor {
 
         // Display results, percentages rounded to 1 decimal place using printf
         System.out.printf("Income: %.0f%n", income);
-        System.out.printf("Food Allowance: %.1f %%%n", foodAllowance / income * 100);
-        System.out.printf("Transportation: %.1f %%%n", transportation / income * 100);
-        System.out.printf("Rent: %.1f %%%n", rent / income * 100);
-        System.out.printf("Utility Bill: %.1f %%%n", utilityBill / income * 100);
+        System.out.printf("Food Allowance: %.1f %%%n", percentageOfIncome(foodAllowance, income));
+        System.out.printf("Transportation: %.1f %%%n", percentageOfIncome(transportation, income));
+        System.out.printf("Rent: %.1f %%%n", percentageOfIncome(rent, income));
+        System.out.printf("Utility Bill: %.1f %%%n", percentageOfIncome(utilityBill, income));
         System.out.printf("Remaining Balance: %.0f%n", remainingBalance);
+    }
+
+    // Returns the given expense as a percentage of income
+    public static double percentageOfIncome(double expense, double income) {
+        return expense / income * 100;
     }
 }
