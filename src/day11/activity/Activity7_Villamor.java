@@ -1,5 +1,6 @@
 package day11.activity;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Activity7_Villamor {
@@ -19,9 +20,12 @@ public class Activity7_Villamor {
         int index = 0;  // manual counter so we can show the index in a for-each
         int sum = 0;    // running total of all the numbers
 
+
+//        Arrays.sort(inputs);
         // read back each value: print it with its index and add it to the sum
         System.out.println("\nYour numbers:");
         for (int input : inputs) {
+            Arrays.sort(inputs);
             System.out.println("Index " + index + " = " + input);
             index++;
             sum += input;
