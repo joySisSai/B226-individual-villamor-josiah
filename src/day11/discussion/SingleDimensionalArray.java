@@ -30,9 +30,9 @@ public class SingleDimensionalArray {
             anime[i] = scanner.nextLine();
         }
 
-            System.out.println("\nAnime you entered: ");
-            for (String title : anime) {
-                System.out.println(title);
-            }
+        System.out.println("\nAnime you entered: ");
+        for (String title : anime) {
+            System.out.println(title);
+        }
     }
 }
