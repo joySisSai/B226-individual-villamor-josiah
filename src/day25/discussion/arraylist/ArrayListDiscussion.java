@@ -1,6 +1,7 @@
 package day25.discussion.arraylist;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListDiscussion {
     static void main(String[] args) {
@@ -21,7 +22,12 @@ public class ArrayListDiscussion {
         cars.remove("KIA");
         System.out.println(cars);
 //        cars.removeAll(cars);
-        cars.clear();
+//        cars.clear();
+//        System.out.println(cars);
+        Collections.reverse(cars);
+        System.out.println(cars);
+
+        Collections.sort(cars);
         System.out.println(cars);
 
     }
